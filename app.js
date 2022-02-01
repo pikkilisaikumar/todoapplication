@@ -41,6 +41,7 @@ app.get("/todos/", async (request, response) => {
 app.post("/todos/", async (request, response) => {
   const { id, todo, isChecked } = request.body;
   const postTodoQuery = `
+  
   INSERT INTO
     todo
   VALUES
